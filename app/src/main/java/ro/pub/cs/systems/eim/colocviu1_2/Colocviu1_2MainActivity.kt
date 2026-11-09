@@ -16,5 +16,31 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        val nextTerm = findViewById<EditTextNumber>(R.id.NextTerm)
+        val allTerms = findViewById<TextView>(R.id.AllTerms)
+        val add = findViewById<Button>(R.id.add)
+        val compute = findViewById<Button>(R.id.compute)
+
+
+
+
+
+        add.setOnClickListener {
+            val value = NextTerm.text.toString()
+            var text = AllTerms.text.toString()
+            if(text.lenth() == 0)
+                text = text.plus(value)
+            else
+                text = text.plus("+").plus(value)
+
+            allTerms.setText(text)
+        }
+
+
+
     }
+
+
+
 }
+
