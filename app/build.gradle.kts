@@ -5,7 +5,7 @@ plugins {
 android {
     namespace = "ro.pub.cs.systems.eim.colocviu1_2"
     compileSdk {
-        version = release(36) {
+        version = release(37) {
             minorApiLevel = 1
         }
     }
